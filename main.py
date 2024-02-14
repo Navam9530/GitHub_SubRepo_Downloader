@@ -26,8 +26,7 @@ def downloadIt():
     except:
         mb.showerror('ERROR', "The Link pasted doesn't consist any GitHub Repositories. Make sure the link is valid and try again!")
     else:
-        path = ctk.filedialog.askdirectory()
-        os.system(f'gitdir --output_dir {path} {link.get()}')
+        os.system(f'gitdir {link.get()}')
         mb.showinfo('SUCCESS', 'Download Succeeded!')
 
 # Window Elements
