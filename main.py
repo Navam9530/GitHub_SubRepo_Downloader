@@ -14,7 +14,7 @@ root.resizable(False, False)
 
 # Download Logic
 def download_it():
-    """Downloads the contents from the limk provided"""
+    """Downloads the contents from the link provided"""
 
     try:
         repo_link = link.get().split('/')
